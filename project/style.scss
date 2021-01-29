@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+@import './scss/home-price';
+@import './scss/about-service';
+@import './scss/contact';
+
+
+
+// ======= Loading ======== 
+
+
+// ======== Navi Bar ========
+
+.hero{
+    position: absolute;
+    top: 0;
+    z-index: 2000;
+}
+.hero-scroll{
+    position: fixed;
+    background-color: #ffffffee;
+    box-shadow: 0 0 5px #00000020;
+    backdrop-filter: blur(5px);
+    animation: toShow 1s linear;
+}
+
+@keyframes toShow{
+    from{
+        transform: translateY(-200px);
+    }to{
+        transform: translate(0);
+    }
+}
+
+.logo{
+    height: 70px;
+}
+.navbar-nav{
+    li{
+        margin: 0 15px;
+
+            .current{
+                border-bottom: 3px solid #1A129F;
+                padding-bottom: 4px;
+            }
+    }
+}
+
+
+
+// ======== General Ulti ==========
+
+.pt-10{
+    padding-top: 100px;
+}
+
+.ani-delay-1{
+    animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+    animation-delay: 1s;
+}
+
+.ani-delay-3 {
+    animation-delay: 1.5s;
+}
+
+.ani-delay-4 {
+    animation-delay: 2s;
+}
+
+.ani-delay-5 {
+    animation-delay: 2.5s;
+}

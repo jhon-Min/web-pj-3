@@ -1,0 +1,43 @@
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+        .about-content{
+            button{
+                padding: 5px 25px;
+                margin-top: 15px;
+            }
+        }
+}
+
+
+.service{
+    padding: 100px 0;
+        .service-card{
+            border-radius: 30px !important;
+            border: none !important;
+            margin-bottom: 40px;
+            box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+            transition: 0.7s;
+
+                &:hover{
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+                    transform: scale(0.98);
+
+                        img{
+                            transition: 0.5s;
+                            transform: scale(1.1);
+                        }
+    
+
+                }
+
+                .service-card-text{
+                    height: 150px;
+                }
+
+                button{
+                    padding: 5px 25px;
+                }
+        }
+}
